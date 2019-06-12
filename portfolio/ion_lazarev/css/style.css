@@ -1,0 +1,32 @@
+#avatar{
+    margin: 50px;
+    
+}
+body{
+    
+    height: 100vh;
+    background-color: gray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#info{
+    
+}
+p{
+    margin: 50px;
+}
+button{
+    font-size: 18px;
+    margin: 20px;
+}
+#content{
+    margin: 50px;
+    
+
+}
+    
+
+#Nav{
+    padding: 2rem;
+    
+}
