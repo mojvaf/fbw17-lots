@@ -13,7 +13,7 @@ The folder "portfolio" will be a shared folder for all individual portfolio proj
 - Then clone your forked repository to a local folder
 - Within the cloned repository: cd into folder "portfolio"
 - Stay on the master branch / work directly on master
-- Create a subfolder <your-firstname>_<your-lastname>
+- Create a subfolder "your-firstname"_"your-lastname";
 - Create three HTML files in this folder: index.html, skills.html, contact.html
 - Within your name folder: create a folder "css"
 - cd into the folder "css" and create a file "styles.css"
