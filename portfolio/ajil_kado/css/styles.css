@@ -1,0 +1,39 @@
+
+body{
+    background-image:url("../img/innocent_girl_608907.jpg");
+    background-repeat: no-repeat;
+background-size: cover;
+text-align: left;
+
+}
+
+    ul {
+        list-style-type: none;
+        text-decoration: none;
+        margin-top: 100px;
+        margin-left: 100px;
+
+      }
+      
+      ul li {
+        display: inline-block;
+        margin-right: 10px;
+        background-color: yellow;
+        padding: 10px;
+        border-radius: 20px;
+       
+      }
+      
+      li:hover {
+        background-color: lightblue;
+      }
+    
+#lorem{
+    margin-right: 50%;
+
+
+}
+#link{
+    color:yellow;
+
+}
