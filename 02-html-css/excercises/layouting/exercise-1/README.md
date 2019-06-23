@@ -4,7 +4,8 @@ Please create the layout shown in this image:
 
 ![alt text](layout-semantic-elements.png "Logo Title Text 1")
 
-Create it the file "index.html" which has already some boilerplate code.
+Use the file "index.html" as your starting point which has already some boilerplate code.
+Find the solution in the file "solition.html"
 
 > Use:
 > - Blocks, inline blocks & fixed pixel heights to realise the layout
