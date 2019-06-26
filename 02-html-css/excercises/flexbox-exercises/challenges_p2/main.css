@@ -5,7 +5,8 @@ body {
 
 .c0 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /* flex-flow is a shortcut: 
+                            It combines "flex-direction" and "flex-wrap" */
 }
 
 .c0 {

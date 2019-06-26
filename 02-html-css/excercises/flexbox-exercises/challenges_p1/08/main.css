@@ -1,9 +1,6 @@
 /* Use flexbox to display all divs in one column on the right of the page.*/
 
 body {
-    display: flex; 
-    flex-flow: column;
-    align-items: flex-end;
     border: 5px solid red;
 }
 
