@@ -16,9 +16,12 @@
 
     #griddy {
       display: grid;
-      /* grid-gap: 10px; */
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, 1fr); 
+      /* WE ACTUALLY DO NOT NEED TO SPECIFY ROWS HERE. GRID WILL OPEN UP NEW ROWS "implicitly" WHEN NEEDED */
+      
+      /* THIS THING HERE DECLARES THE WHOLE LAYOUT:
+        IT PLACES ITEMS WITH A DEFINED "GRID AREA" LABEL ON THE GRID */
       grid-template-areas: 
         "header header header header header"
         "nav article article article aside"
@@ -41,9 +44,14 @@
       grid-area: footer
     }
 
+    /* MEDIA QUERY FOR SMARTPHONES (small and large) */ 
     @media screen and (max-width: 600px) {
       #griddy {
+        /* FIRST WE OVERWRITE THE COLUMN COUNT TO MATCH OUR NEW LAYOUT ON SMARTPHONES 
+        */
         grid-template-columns: repeat(3, 1fr);
+
+        /* NOW WE JUST RE-ARRANGE OUR ITEMS ON THE GRID FOR MOBILE. YES. THAT'S IT */
         grid-template-areas: 
           "header header header"
           "nav nav nav"
