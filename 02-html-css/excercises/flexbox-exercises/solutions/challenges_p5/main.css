@@ -36,10 +36,6 @@ aside {
     }
 }
 @media screen and (min-width: 900px) {
-    /* main {
-        flex-grow: 1;
-        flex-basis: none;
-    } */
     aside {
         flex-basis: 50%;
     }

@@ -15,5 +15,5 @@ On tablet:
 - no margin on the body
 
 On desktop:
-- info col (aside) is shown and takes 30% of the width
+- info col (aside) is shown and takes 50% of the width
 - margin of the body: 10% left and right
