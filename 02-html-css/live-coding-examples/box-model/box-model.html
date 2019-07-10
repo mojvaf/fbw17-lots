@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box model</title>
+  <style>
+    div {
+      box-sizing: border-box;
+      border: 1px solid;
+    }
+    #div1 {
+      padding: 10px;
+      background-color: yellow;
+    }
+    #div1 > div {
+      padding-left: 50px;
+      background-color: red;
+      width: 50%;
+    }
+    #div3 {
+      background-color: green;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+    #div3 :first-child{
+      color: white;
+      border: 5px solid lightgrey;
+      margin-left: 30px;
+    }
+    #div3 :last-child{
+      color: yellow;
+      border: 8px solid purple;
+    }
+</style>
+</head>
+<body>
+
+  <h2>The box model in action: padding, margin, border and width</h2>
+
+  <div id="div1">
+    Div 1
+    <div id="div2">
+      Div 2
+      <div id="div3">
+        Div 3
+        <div id="div3-1">
+          Div 3.1
+        </div>
+        <div id="div3-2">
+          Div 3.2
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

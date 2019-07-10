@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid template areas</title>
+  <style>
+
+
+    #griddy > * {
+      border: 1px solid;
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    #griddy {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, 1fr); 
+      /* WE ACTUALLY DO NOT NEED TO SPECIFY ROWS HERE. GRID WILL OPEN UP NEW ROWS "implicitly" WHEN NEEDED */
+      
+      /* THIS THING HERE DECLARES THE WHOLE LAYOUT:
+        IT PLACES ITEMS WITH A DEFINED "GRID AREA" LABEL ON THE GRID */
+      grid-template-areas: 
+        "header header header header header"
+        "nav article article article aside"
+        "nav footer footer footer footer";
+    }
+
+    header {
+      grid-area: header
+    }
+    nav {
+      grid-area: nav
+    }
+    article {
+      grid-area: article
+    }
+    aside {
+      grid-area: aside
+    }
+    footer {
+      grid-area: footer
+    }
+
+    /* MEDIA QUERY FOR SMARTPHONES (small and large) */ 
+    @media screen and (max-width: 600px) {
+      #griddy {
+        /* FIRST WE OVERWRITE THE COLUMN COUNT TO MATCH OUR NEW LAYOUT ON SMARTPHONES 
+        */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* NOW WE JUST RE-ARRANGE OUR ITEMS ON THE GRID FOR MOBILE. YES. THAT'S IT */
+        grid-template-areas: 
+          "header header header"
+          "nav nav nav"
+          "article article aside"
+          "footer footer footer"
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="griddy">
+      <header>Header</header>
+      <nav>Nav</nav>
+      <article>Article</article>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
+  </div>
+
+</body>
+</html>

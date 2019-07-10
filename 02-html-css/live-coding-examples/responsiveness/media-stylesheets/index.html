@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media based Stylesheets</title>
+  <style>
+    h1, p {
+      color: white;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 1.3em;
+    }
+  </style>
+  <link rel="stylesheet" 
+    media="screen and (max-width: 600px)" href="css/smallscreen.css"></head>
+  <link rel="stylesheet" 
+    media="screen and (min-width: 601px)" href="css/widescreen.css">
+<body>
+  <h1>This page uses media stylesheets</h1>
+
+  <p>
+    Open this file in the browser and test the effect!
+  </p>
+  <p>
+    Until a width of 600px a green background will be shown. From 601 pixels on a blueviolet background.
+  </p>
+  <p>
+    By using the "media" attribute within the &lt;link&gt; tag the stylesheet will only be applied by 
+    the browser if the media range is met.
+  </p>
+  <p>
+    Pro: This way you can separate your styles for device ranges more clearly.<br />
+  </p>
+</body>
+</html>
