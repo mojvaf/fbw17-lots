@@ -23,3 +23,7 @@ Instructions:
 - In Browser -> right-click -> Inspect -> activate responsive view. Scaling the viewport width down and test the correct behaviour of the images.
 
 Use CSS properties "object-fit" and "object-position" to realize this!
+
+Final result:
+
+![Final Result](object-fit--final-result.png)
